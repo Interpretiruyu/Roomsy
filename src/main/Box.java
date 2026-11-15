@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.skozi.roomsmod;
 
 import net.minecraft.core.BlockPos;
 
