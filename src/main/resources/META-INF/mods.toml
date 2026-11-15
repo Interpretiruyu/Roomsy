@@ -9,7 +9,7 @@ license="All Rights Reserved"
 #clientSideOnly=true #optional, default=false
 
 [[mods]]
-modId="examplemod"
+modId="roomsmod"
 version="1.0.0"
 displayName="Example Mod"
 #updateJSONURL="https://example.com/updates.json" #optional
@@ -22,14 +22,14 @@ authors="YourNameHere, OtherNameHere" #optional
 description='''Example mod description.
 Newline characters can be used like this, and rendered on the mods screen properly.'''
 
-[[dependencies.examplemod]] #recommended
+[[dependencies.roomsmod]] #recommended
     modId="forge"
     mandatory=true
     versionRange="[61,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.examplemod]] #recommended
+[[dependencies.roomsmod]] #recommended
     modId="minecraft"
     mandatory=true
     versionRange="[1.21.11,1.22,)"
