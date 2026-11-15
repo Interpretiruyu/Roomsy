@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.skozi.roomsmod;
 
 public final class Room {
     public final int id;
