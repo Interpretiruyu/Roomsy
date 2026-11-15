@@ -25,18 +25,9 @@ import net.minecraft.world.item.ItemStack;
 public final class RoomsCommands {
     private RoomsCommands() {}
 
-    /**
-     * ВАЖНО: в 1.21.11 система прав оператора менялась. Если эта строка подсветится красным,
-     * замените условие на актуальное (например Commands.hasPermission(Commands.LEVEL_GAMEMASTERS)
-     * в .requires(...) вместо этого метода).
-     */
-    private static boolean isAdmin(CommandSourceStack src) {
-        return src.hasPermission(2);
-    }
-
     public static void register(CommandDispatcher<CommandSourceStack> d) {
         d.register(Commands.literal("roomsset")
-                .requires(RoomsCommands::isAdmin)
+                .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
 
                 .then(Commands.literal("reg").executes(c -> mode(c, RoomsManager.Mode.REG,
                         "Registration: right-click two blocks with the stick (opposite corners).")))
