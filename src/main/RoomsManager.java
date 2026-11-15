@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.skozi.roomsmod;
 
 import java.io.IOException;
 import java.nio.file.Files;
