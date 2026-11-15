@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.skozi.roomsmod;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
